@@ -1,15 +1,62 @@
 # HRL-FlowNavigation
 
 ## Overview
-This repository is the official implementation of the article **"Navigation and obstacle avoidance in complex vortical flows via hierarchical reinforcement learning"** (DOI Link). The goal of this work is to provide a robust and scalable solution for autonomous robot control and navigation in highly unsteady fluid environments. By introducing a **goal-conditioned hierarchical reinforcement learning (HRL)** framework, we address the inherent difficulty of balancing long-horizon strategic planning with short-horizon reactive control under stochastic flow disturbances and strong fluid–structure interactions.
 
-Through this hierarchical decomposition, we have successfully developed:
+Autonomous navigation in fluid environments is fundamentally challenged by unsteady flow disturbances, strong fluid–structure coupling, and limited sensory observability. These factors tightly couple rapid stabilization with long-horizon decision making, making conventional control and end-to-end reinforcement learning approaches difficult to generalize across dynamically complex scenarios.
 
-### A Robust Low-Level Controller
-Capable of internalizing complex fluid dynamics to achieve precise force compensation. It ensures stable hovering and accurate path tracking by neutralizing instantaneous flow perturbations, providing a reliable physical foundation for the entire system.
+This repository provides the official implementation of the paper:
 
-### An Efficient High-Level Planner
-Capable of generating adaptive sub-goals and explicit directional intents for safe transit. Even when relying solely on local sensory information, the planner effectively navigates long distances and bypasses obstacles, exhibiting a level of decisiveness and consistency that traditional end-to-end approaches fail to achieve.
+**Navigation and obstacle avoidance in complex vortical flows via hierarchical reinforcement learning**  
+*(DOI Link)*
+
+Inspired by the hierarchical organization observed in biological locomotion, this work introduces a **goal-conditioned hierarchical reinforcement learning (HRL)** framework that explicitly separates long-horizon strategic planning from short-horizon dynamical control. The framework enables autonomous agents to maintain physical stability while performing complex navigation tasks in highly unsteady flow environments.
+
+---
+
+## Key Features
+
+### Robust Low-Level Fluid-Aware Controller
+
+The low-level controller learns fluid–structure interaction dynamics and generates dynamically feasible control forces. It enables:
+
+- Stable hovering under strong vortex disturbances  
+- Accurate trajectory tracking in time-varying flows  
+- Real-time rejection of instantaneous flow perturbations  
+
+---
+
+### Adaptive High-Level Strategic Planner
+
+The high-level policy generates flow-aware directional sub-goals using partial sensory observations. It enables:
+
+- Long-distance autonomous navigation  
+- Safe obstacle avoidance under limited perception  
+- Consistent directional intent generation under stochastic disturbances  
+
+Compared with end-to-end RL policies, the hierarchical strategy exhibits improved stability, interpretability, and generalization capability.
+
+---
+
+## Demonstration Videos
+
+### Hovering Under Unsteady Flow
+Demonstrates disturbance rejection and stable hovering in vortical flow fields.
+
+(Video Link)
+
+---
+
+### Trajectory Tracking in Time-Varying Flow
+Shows precise path-following performance while compensating for dynamic flow perturbations.
+
+(Video Link)
+
+---
+
+### Autonomous Navigation with Obstacle Avoidance
+Demonstrates long-range navigation with simultaneous obstacle avoidance in complex flow environments.
+
+(Video Link)
 
 ---
 
