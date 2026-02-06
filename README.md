@@ -9,7 +9,7 @@ This repository provides the official implementation of the paper:
 **Navigation and obstacle avoidance in complex vortical flows via hierarchical reinforcement learning**  
 *(DOI Link)*
 
-Inspired by the hierarchical organization observed in biological locomotion, this work introduces a **goal-conditioned hierarchical reinforcement learning (HRL)** framework that explicitly separates long-horizon strategic planning from short-horizon dynamical control. The framework enables autonomous agents to maintain physical stability while performing complex navigation tasks in highly unsteady flow environments.
+Inspired by the hierarchical organization observed in biological locomotion, this work introduces a **hierarchical reinforcement learning (HRL)** framework that explicitly separates long-horizon strategic planning from short-horizon dynamical control. The framework enables autonomous agents to maintain physical stability while performing complex navigation tasks in highly unsteady flow environments.
 
 ---
 
