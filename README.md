@@ -42,21 +42,21 @@ Compared with end-to-end RL policies, the hierarchical strategy exhibits improve
 ### Hovering Under Unsteady Flow
 Demonstrates disturbance rejection and stable hovering in vortical flow fields.
 
-![Hovering GIF](videos/hovering.gif)
+![Hovering GIF](video/hovering.gif)
 
 ---
 
 ### Trajectory Tracking in Time-Varying Flow
 Shows precise path-following performance while compensating for dynamic flow perturbations.
 
-![Trajectory Tracking GIF](videos/path_tracking.gif)
+![Trajectory Tracking GIF](video/path_tracking.gif)
 
 ---
 
 ### Autonomous Navigation with Obstacle Avoidance
 Demonstrates long-range navigation with simultaneous obstacle avoidance in complex flow environments.
 
-![Navigation + Obstacle Avoidance GIF](videos/navigation_obstacle.gif)
+![Navigation + Obstacle Avoidance GIF](video/navigation_obstacle.gif)
 
 ---
 
